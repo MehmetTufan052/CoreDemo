@@ -2,6 +2,16 @@
 
 <div class="comment-top">
     <h4>Yorumlar</h4>
+    @if (Model.Count() == 0)
+    {
+        <h2>Buraya daha önce yorum yapılmamış.</h2>
+    }
+
+    else
+    {
+        
+    
+
     @foreach (var item in Model)
         {
     <div class="media">
@@ -17,5 +27,6 @@
             </div>
         
     </div>
+    }
     }
 </div>
