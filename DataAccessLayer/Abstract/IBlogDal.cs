@@ -10,8 +10,8 @@ namespace DataAccessLayer.Abstract
     public interface IBlogDal:IGenericDal<Blog>
     {
 
-        
 
+        List<Blog> GetListWithCategory();  //Blog içerisinde kategoriyle ilişki olduğu için Genericten değil de özel olarak listeledik.
 
     }
 }
